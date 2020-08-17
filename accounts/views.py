@@ -16,7 +16,6 @@ from .decorators import unauthenticated_user, allowed_users, admin_only
 
 @unauthenticated_user
 def registerPage(request):
-	
 	form = CreateUserForm()
 	if request.method == 'POST':
 		form = CreateUserForm(request.POST)
